@@ -1,12 +1,18 @@
 import classNames from "classnames/bind";
 import styles from "./Header.module.scss";
+import images from "~/assets/images";
 
 const cx = classNames.bind(styles);
+
+const searchInput = document.querySelector(".search__input");
+const inputIcon = document.querySelector(".input__icon");
 
 function Header() {
   return (
     <header className={cx("wrapper")}>
-      <div className={cx("logo")}>LOGO</div>
+      <div className={cx("logo__section")}>
+        <img src={images.logo} alt="Logo" className={cx("logo")} />
+      </div>
 
       <div className={cx("category__section")}>
         <ul className={cx("nav__list")}>

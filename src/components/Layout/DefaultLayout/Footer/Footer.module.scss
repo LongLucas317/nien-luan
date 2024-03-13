@@ -1,0 +1,69 @@
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  color: var(--TEXT-color);
+  padding: 64px 0;
+  background-color: var(--BG-color);
+}
+
+.wrapper .infor__section .infor__header,
+.wrapper .social__section .social__header,
+.wrapper .feedback__section .feedback__header {
+  font-size: 24px;
+  margin: 12px;
+}
+
+.infor__section .infor__email,
+.infor__section .infor__phone,
+.infor__section .infor__address {
+  font-size: 18px;
+}
+
+.infor__section .infor__email i.email__icon.bx.bxl-email {
+  margin-right: 12px;
+}
+
+.social__section .facebook,
+.social__section .youtube,
+.social__section .instagram,
+.social__section .twitter {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.social__section .facebook:hover,
+.social__section .youtube:hover,
+.social__section .instagram:hover,
+.social__section .twitter:hover {
+  opacity: 0.8;
+}
+
+.feedback .feedback__input {
+  width: 100%;
+  font-size: 16px;
+  margin-top: 6px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.feedback .feedback__submit {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: var(--BTN-color);
+  border: none;
+  outline: none;
+  margin-top: 6px;
+  padding: 12px 24px;
+  border-radius: 6px;
+  float: right;
+  transition: 0.3s;
+}
+
+.feedback .feedback__submit:hover {
+  background-color: #a4c3a2;
+  cursor: pointer;
+}
