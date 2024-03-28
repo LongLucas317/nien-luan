@@ -1,13 +1,19 @@
 import Home from "~/pages/Home";
-import Product from "~/pages/Product";
 import Cart from "~/pages/Cart";
+import Checkout from "~/pages/Checkout";
+import Product from "~/pages/Product";
 import ProductDetail from "~/pages/ProductDetail";
+import MyOrder from "~/pages/MyOrder";
+import MyOrderDetail from "~/pages/MyOrderDetail";
 
 const publicRoutes = [
   { path: "/", component: Home },
-  { path: "/product", component: Product },
-  { path: "/product-detail", component: ProductDetail },
-  { path: "/cart", component: Cart, layout: null },
+  { path: "/cart", component: Cart },
+  { path: "/:lavelOne/lavelTwo", component: Product },
+  { path: "/product/:productId", component: ProductDetail },
+  { path: "/checkout", component: Checkout },
+  { path: "/account/my-order", component: MyOrder },
+  { path: "/account/my-order/:my-orderId", component: MyOrderDetail },
 ];
 
 const privateRoutes = [];

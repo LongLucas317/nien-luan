@@ -1,0 +1,88 @@
+.cart__section {
+  padding: 24px 64px;
+
+  .cart__header {
+    font-size: 48px;
+    margin: 32px 0;
+    text-align: center;
+  }
+}
+
+.cart__section .product__wrapper {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 60% 40%;
+
+  .total {
+    width: 100%;
+    height: 385px;
+    padding: 16px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .total .total__header {
+    margin: 16px 0;
+  }
+
+  .total .total__section {
+    padding: 18px 0;
+    border-top: 2px solid #5d7b6f;
+    border-bottom: 2px solid #5d7b6f;
+  }
+
+  .total .sale__section,
+  .total .ship__section,
+  .total .total__price,
+  .total .price__section {
+    padding: 8px 0;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .total .pay__btn {
+    text-align: center;
+  }
+
+  .total .pay__btn button {
+    font-size: 16px;
+    font-weight: 550;
+    width: 100%;
+    padding: 16px 48px;
+    color: white;
+    background-color: var(--BTN-color);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+
+  .total .pay__btn button:hover {
+    color: black;
+    background-color: #48eb4d;
+    transition: background-color 0.3s ease;
+  }
+}
+
+.cart__section .cart__empty {
+  text-align: center;
+  padding: 32px;
+
+  .cart__des {
+    font-size: 24px;
+    opacity: 0.6;
+    margin: 24px 0px;
+  }
+
+  .return__home {
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+    background-color: #b0d4b8;
+    outline: none;
+    padding: 16px 24px;
+    border-radius: 50px;
+  }
+}

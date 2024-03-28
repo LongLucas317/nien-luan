@@ -1,7 +1,7 @@
 .productDetail__section {
   display: flex;
   width: 100%;
-  padding: 164px 128px 64px;
+  padding: 64px 128px 64px;
 }
 
 .productDetail__section .images__section {
@@ -59,7 +59,13 @@
   padding: 12px 0;
 }
 
-.productDetail__section .cart__btn {
+.productDetail__section .product__detail .product__quatity {
+  font-size: 14px;
+  margin: 12px 8px;
+  display: block;
+}
+
+.productDetail__section .product__detail .cart__btn {
   border: none;
   outline: none;
   font-size: 24px;
@@ -69,10 +75,12 @@
   background-color: var(--BTN-color);
 }
 
-.same__product {
+.same__product,
+.comment__section {
   margin: 64px 128px;
 }
 
+.comment__section .comment__header,
 .same__product .sameProduct__name {
   font-size: 32px;
   padding: 12px 18px;

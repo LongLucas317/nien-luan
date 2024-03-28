@@ -1,17 +1,20 @@
 import classNames from "classnames/bind";
 import styles from "./CardProduct.module.scss";
-import images from "~/assets/images";
+import vpn from "~/assets/images/product/kit_voi_tuoi.jpg";
+import { useNavigate } from "react-router-dom";
+
 const cx = classNames.bind(styles);
 
-function CardProduct() {
+function CardProduct({ product }) {
+  const navigate = useNavigate();
+
   return (
-    <div className={cx("product__detail")}>
+    <div
+      onClick={() => navigate(`/product/${5}`)}
+      className={cx("product__detail")}
+    >
       <div className={cx("image__section")}>
-        <img
-          src={images.product}
-          alt="Kéo tỉa cành"
-          className={cx("product__img")}
-        />
+        <img src={vpn} alt="Kéo tỉa cành" className={cx("product__img")} />
       </div>
       <div className={cx("product__description")}>
         <h3 className={cx("product__name")}>Kéo tỉa cành</h3>

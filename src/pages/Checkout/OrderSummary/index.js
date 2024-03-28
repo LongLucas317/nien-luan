@@ -1,22 +1,15 @@
 import classNames from "classnames/bind";
-import styles from "./Cart.module.scss";
+import styles from "./OrderSummary.module.scss";
 
-import emptyCart from "~/assets/images/cartEmpty/empty_cart.jpg";
 import CartItem from "~/components/CartItem";
-import { useNavigate } from "react-router-dom";
+import AddressItem from "~/components/AddressItem";
 
 const cx = classNames.bind(styles);
 
-function Cart() {
-  const navigate = useNavigate();
-
-  const handleCheckout = () => {
-    navigate("/checkout?step=2");
-  };
-
+function OrderSummary() {
   return (
-    <div className={cx("cart__section")}>
-      <h1 className={cx("cart__header")}>Giỏ Hàng</h1>
+    <div className={cx("orderSummary__section")}>
+      <AddressItem />
 
       <div className={cx("product__wrapper")}>
         <div className={cx("product__section")}>
@@ -50,20 +43,12 @@ function Cart() {
             <p className="price">89.000₫</p>
           </div>
           <div className={cx("pay__btn")}>
-            <button onClick={handleCheckout}>Thanh Toán</button>
+            <button>Thanh Toán</button>
           </div>
         </div>
       </div>
-
-      {/* <div className={cx("cart__empty")}>
-        <img className={cx("cart__image")} src={emptyCart} alt="Empty Cart" />
-        <p className={cx("cart__des")}>Chưa có sản phẩm nào trong giỏ hàng</p>
-        <a href="#" className={cx("return__home")}>
-          Tiếp tục mua hàng
-        </a>
-      </div> */}
     </div>
   );
 }
 
-export default Cart;
+export default OrderSummary;

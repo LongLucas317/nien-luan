@@ -1,0 +1,99 @@
+.myOrderDetail__section {
+  padding: 24px 64px;
+
+  .myOrderDetail__section {
+    font-size: 48px;
+    margin: 24px 0;
+    text-align: center;
+  }
+
+  .myOrderDetail__wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 60% 40%;
+  }
+}
+
+.myOrderDetail__wrapper .myOrder__content {
+  width: 100%;
+  margin: 8px auto 0;
+  padding: 16px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  .myOrder__status .status__header {
+    margin-bottom: 16px;
+  }
+
+  .myOrder__status .pay__section,
+  .myOrder__status .ship__section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  .myOrder__detail {
+    display: flex;
+    gap: 40px;
+    padding: 16px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .myOrder__detail .myOrder__image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .myOrder__detail .myOrder__image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .myOrder__detail .order__detail .orderDetail__header {
+    font-size: 32px;
+  }
+
+  .myOrder__detail .order__detail .orderDetail__price {
+    font-size: 18px;
+    margin: 12px 0;
+  }
+
+  .myOrder__action {
+    display: flex;
+    justify-content: space-between;
+    margin: 22px 0 18px;
+  }
+
+  .myOrder__action .myOrder__price {
+    display: flex;
+    align-items: center;
+
+    .myOrder__totalPrice {
+      font-size: 22px;
+      margin-left: 12px;
+      color: red;
+    }
+  }
+
+  .myOrder__action .action__btn .cancel__btn {
+    margin-right: 12px;
+  }
+
+  .myOrder__action .action__btn .cancel__btn {
+    font-size: 16px;
+    padding: 12px 8px;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    background-color: #44c239;
+  }
+
+  .myOrder__action .action__btn .cancel__btn:hover {
+    cursor: pointer;
+    color: black;
+    background-color: #48eb4d;
+    transition: background-color 0.3s ease;
+  }
+}

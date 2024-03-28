@@ -1,5 +1,4 @@
 .product__detail {
-  /* width: 25%; */
   margin: 0px 16px;
   overflow: hidden;
   border-radius: 10px;
@@ -13,7 +12,7 @@
 
 .product__detail .image__section .product__img {
   width: 100%;
-  overflow: hidden;
+  object-fit: cover;
 }
 
 .product__detail .product__description {

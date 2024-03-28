@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 function Product() {
   return (
     <div className={cx("product__section")}>
-      <h2 className={cx("product__header")}>Dụng cụ cắt tỉa</h2>
+      <h1 className={cx("product__header")}>Dụng cụ cắt tỉa</h1>
 
       <div className={cx("product__list")}>
         <CardProduct />

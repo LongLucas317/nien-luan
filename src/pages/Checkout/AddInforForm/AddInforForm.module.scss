@@ -1,0 +1,79 @@
+.form__section {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 40% 60%;
+
+  .addess__saved {
+    overflow-y: scroll;
+  }
+
+  .addess__saved {
+    border: 1px solid black;
+  }
+
+  .form__infor .form__wrapper {
+    border: 1px solid black;
+    padding: 24px;
+  }
+}
+
+.form__wrapper .add__address {
+  .infor__section {
+    display: flex;
+    gap: 24px;
+    flex: 1 1;
+  }
+
+  .infor__section .name__section input,
+  .infor__section .phone__section input,
+  .address__section .ward__section input,
+  .address__section .district__section input,
+  .address__section .city__section input {
+    font-size: 18px;
+    padding: 12px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .address__section {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 33% 33% 33%;
+    margin: 16px 0;
+  }
+
+  .address__detail .addressDetail__section textarea {
+    font-size: 18px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+.addess__saved .choose__address,
+.form__infor .form__wrapper .add__address .add__btn {
+  font-size: 16px;
+  font-weight: bold;
+  width: 200px;
+  border: none;
+  outline: none;
+  padding: 12px;
+  margin: 10px 40% 0 40%;
+  border-radius: 10px;
+  color: white;
+  background-color: #44c239;
+}
+
+.addess__saved .choose__address:hover,
+.form__infor .form__wrapper .add__address .add__btn:hover {
+  color: black;
+  cursor: pointer;
+  background-color: #48eb4d;
+  transition: background-color 0.3s ease;
+}
+
+.addess__saved .choose__address {
+  margin: 10px 12px 0;
+}

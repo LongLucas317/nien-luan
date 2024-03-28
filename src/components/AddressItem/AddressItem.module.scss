@@ -1,0 +1,18 @@
+.addressItem__section {
+  margin: 8px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  .customer__name,
+  .customer__address .address__header,
+  .customer__phoneNumber .phoneNumber__header {
+    margin: 12px 0;
+  }
+
+  .customer__address .address,
+  .customer__address .address__detail,
+  .customer__phoneNumber .phoneNumber {
+    margin: 8px 12px;
+  }
+}
